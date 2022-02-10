@@ -1,4 +1,5 @@
 rm -rf out
 mkdir out
-cp images/* images/out
+mkdir out/images
+cp images/* out/images
 asciidoctor -r asciidoctor-diagram -D ./out ./*.adoc
